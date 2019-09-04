@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #add4ef;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: #222;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	color: #222;
+}
+
+p {
+	color: #222;
+}
+
+img {
+	margin-bottom: 5vh;
+}
+
+.display-4 {
+	font-size: 2.6rem;
+	text-align: center;
+}
+
+/* Site Colors */
+.color1 {
+	background-color: #add4ef;
+}
+
+.color2 {
+	background-color: coral;
+}
+
+.color3 {
+	background-color: skyblue;
+}
+
+.color4 {
+	background-color: salmon;
+}
+
+/* Navigation */
+.navbar {
+	color: white;
+}
+
+.nav-item:hover {
+	text-decoration: underline;
+}
+
+nav a {
+	margin-right: 2vw;
+}
+
+nav button {
+	margin-left: 75vw;
+}
+
+/* Jumbo 1 */
+.jumbo1 {
+	padding-top: 8vh;
+	padding-bottom: 8vh;
+}
+
+/* Jumbo 2 */
+.jumbo2 {
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+}
+
+/* Front Pictures */
+.basic {
+	background-image:url(girl2.png);
+	background-size: cover;
+	color: white;
+}
+
+.men {
+	background-image:url(frontguy.png);
+	background-size: cover;
+	color: white;
+}
+
+.women {
+	background-image:url(frontgirl.png);
+	background-size: cover;
+	color: white;
+}
+
+/* Gallery */
+.gallery {
+	display: grid;
+	grid-gap: 5vw;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+/* Gallery */
+.gallery2 {
+	display: grid;
+	grid-gap: 5vw;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+/* Footer */
+footer {
+	margin-top: 8vh;
+	height: 40vh;
+	background-color: #222;
+	text-align: center;
+}
+
+footer p {
+	padding: 12vh 0;
+	color: white;
+}
+
+/* Media Query */
+@media  screen and (min-width: 768px) {
+    
+	/* Front Pictures */
+	.basic {
+		background-image:url(girl2.png);
+		background-size: cover;
+	}
+
+	.men {
+		background-image:url(frontguy.jpg);
+		background-size: cover;
+	}
+
+	.women {
+		background-image:url(frontgirl.jpg);
+		background-size: cover;
+	}
+
+	.basic h1, .men h1, .women h1 {
+		opacity: 0;
+		transition: 0.3s ease-in-out;
+	}
+
+	.basic:hover {
+		color: white;
+	}
+
+	.men:hover {
+		color: white;
+		
+	}
+
+	.women:hover {
+		color: white;
+		
+	}
+
+	.basic:hover h1, .men:hover h1, .women:hover h1 {
+		opacity: 1;
+	}
+	
+	.gallery {
+		grid-gap: 2vw;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	
+	.gallery2 {
+		grid-gap: 2vw;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	footer {
+		margin-top: 10vh;
+		height: 30vh;
+	}
+}
+
+	
+	
+	
